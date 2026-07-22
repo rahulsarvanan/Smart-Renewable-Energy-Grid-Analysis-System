@@ -54,6 +54,7 @@ export class QualityEvaluator {
     return {
       city: payload.city || 'Unknown',
       grade,
+      status: isFallback ? 'Fallback Data' : 'Live Telemetry',
       freshness_score: freshnessScore,
       completeness_score: completenessScore,
       reliability_score: reliabilityScore,
