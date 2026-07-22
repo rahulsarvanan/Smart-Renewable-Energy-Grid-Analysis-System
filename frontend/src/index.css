@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-container: #00629e;
+  --color-on-primary-fixed-variant: #003751;
+  --color-on-secondary: #002a47;
+  --color-outline-variant: #2a4a69;
+  --color-on-error: #490006;
+  --color-surface-container: #001b31;
+  --color-on-background: #d5e7ff;
+  --color-background: #000f1f;
+  --color-on-surface: #d5e7ff;
+  --color-on-primary-container: #002d44;
+  --color-on-tertiary: #271284;
+  --color-inverse-primary: #006591;
+  --color-tertiary: #a9a0ff;
+  --color-tertiary-fixed: #afa6ff;
+  --color-error: #ff716c;
+  --color-primary-fixed: #00b3fd;
+  --color-on-tertiary-fixed-variant: #352591;
+  --color-surface-variant: #002844;
+  --color-secondary-dim: #3da4f6;
+  --color-on-tertiary-fixed: #13005b;
+  --color-on-secondary-fixed: #00375b;
+  --color-error-container: #9f0519;
+  --color-surface-tint: #57bfff;
+  --color-outline: #597899;
+  --color-primary-fixed-dim: #00a5ea;
+  --color-surface-dim: #000f1f;
+  --color-on-surface-variant: #8faed1;
+  --color-on-error-container: #ffa8a3;
+  --color-on-secondary-fixed-variant: #005488;
+  --color-surface-container-highest: #002844;
+  --color-on-tertiary-container: #1a0072;
+  --color-inverse-surface: #f7f9ff;
+  --color-primary-container: #00b3fd;
+  --color-tertiary-fixed-dim: #a196ff;
+  --color-secondary: #48acff;
+  --color-on-primary-fixed: #000d18;
+  --color-surface-container-lowest: #000000;
+  --color-tertiary-dim: #9b90fe;
+  --color-surface-bright: #002e4e;
+  --color-primary-dim: #00a8ee;
+  --color-surface-container-high: #00213a;
+  --color-on-primary: #003853;
+  --color-secondary-fixed: #b0d5ff;
+  --color-surface-container-low: #001527;
+  --color-secondary-fixed-dim: #94c8ff;
+  --color-on-secondary-container: #f5f8ff;
+  --color-error-dim: #d7383b;
+  --color-primary: #57bfff;
+  --color-tertiary-container: #9b90fe;
+  --color-inverse-on-surface: #385777;
+  --color-surface: #000f1f;
+
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Public Sans", sans-serif;
+}
+
+@layer base {
+  /* Hide scrollbar for clean UI */
+  ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+      background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: rgba(89, 120, 153, 0.3);
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgba(89, 120, 153, 0.5);
+  }
+}
+
+@keyframes scan {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #57bfff, transparent);
+  box-shadow: 0 0 10px #57bfff;
+  animation: scan 4s linear infinite;
+  pointer-events: none;
+  z-index: 15;
+}
+
