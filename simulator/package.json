@@ -1,0 +1,23 @@
+{
+  "name": "simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.7",
+    "aedes": "^1.1.1",
+    "aedes-server-factory": "^0.2.1",
+    "dotenv": "^17.4.2",
+    "mqtt": "^5.15.2",
+    "websocket-stream": "^5.5.2",
+    "ws": "^8.21.1"
+  }
+}
