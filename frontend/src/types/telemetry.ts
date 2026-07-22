@@ -27,6 +27,7 @@ export interface TelemetryPayload {
 export interface DataQualityReport {
   city: string;
   grade: 'A' | 'B' | 'C';
+  status: string;
   freshness_score: number;
   completeness_score: number;
   reliability_score: number;

@@ -74,7 +74,7 @@ export const syncGridStateToDatabase = async (gridStates: Record<string, GridSta
  */
 export const logOperatorAction = async (actionType: string, targetNode: string, details: string) => {
   try {
-    await supabase.from('operator_actions').insert([{
+    await supabase.from('operator_actions' as any).insert([{
       action_type: actionType,
       target_node: targetNode,
       details
