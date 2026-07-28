@@ -1,5 +1,9 @@
 # Smart Energy Grid Analysis Platform
 
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://smart-renewable-energy-grid-analysi.vercel.app/ops)
+
+🌐 **Live Vercel Deployment:** [https://smart-renewable-energy-grid-analysi.vercel.app/ops](https://smart-renewable-energy-grid-analysi.vercel.app/ops)
+
 An expert-level, AI-powered Smart Grid monitoring platform. Built for utility operators and energy consumers to monitor live telemetry, predict failures, and optimize energy flow.
 
 ## Features
@@ -8,7 +12,7 @@ An expert-level, AI-powered Smart Grid monitoring platform. Built for utility op
 - **AI Integration:** Google Gemini integration for demand forecasting and anomaly detection via Supabase Edge Functions.
 - **Role-Based Access:** Portals for Engineers, Technicians, and Consumers.
 - **Glassmorphic UI:** A dark-mode, futuristic UI utilizing Tailwind CSS and React.
-- **DevOps Ready:** Dockerized for local development and Vercel-ready for production.
+- **DevOps Ready:** Dockerized for local development and deployed on Vercel for production.
 
 ## Tech Stack
 - React + TypeScript + Vite
